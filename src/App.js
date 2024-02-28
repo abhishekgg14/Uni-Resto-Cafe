@@ -11,6 +11,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<><Nav/><Salad/></>} />
+        <Route path='/barn' element={<><Nav/><Barnyard/></>} />
       </Routes>
       </BrowserRouter>
     </div>
