@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HenHouse from './components/HenHouse';
 import Sea from './components/Sea';
 import Biriyani from './components/Biriyani';
+import Fast from './components/Fast';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/hen' element={<><Nav/><HenHouse/></>} />
         <Route path='/sea' element={<><Nav/><Sea/></>} />
         <Route path='/biriyani' element={<><Nav/><Biriyani/></>} />
+        <Route path='/fast' element={<><Nav/><Fast/></>} />
       </Routes>
       </BrowserRouter>
     </div>
