@@ -26,7 +26,7 @@ const Nav = () => {
                                 <a class="nav-link active" aria-current="page" href="/sea">Fresh From The Sea</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">From The Hen House</a>
+                                <a class="nav-link active" aria-current="page" href="/biriyani">Biriyani</a>
                             </li>
                         </ul>
                     </div>
