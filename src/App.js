@@ -5,6 +5,7 @@ import Salad from './components/Salad';
 import Barnyard from './components/Barnyard';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HenHouse from './components/HenHouse';
+import Sea from './components/Sea';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={<><Nav/><Salad/></>} />
         <Route path='/barn' element={<><Nav/><Barnyard/></>} />
         <Route path='/hen' element={<><Nav/><HenHouse/></>} />
+        <Route path='/sea' element={<><Nav/><Sea/></>} />
       </Routes>
       </BrowserRouter>
     </div>
