@@ -28,6 +28,9 @@ const Nav = () => {
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="/biriyani">Biriyani</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/fast">Fast Food</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
