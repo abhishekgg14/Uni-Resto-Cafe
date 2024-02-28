@@ -6,6 +6,7 @@ import Barnyard from './components/Barnyard';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HenHouse from './components/HenHouse';
 import Sea from './components/Sea';
+import Biriyani from './components/Biriyani';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/barn' element={<><Nav/><Barnyard/></>} />
         <Route path='/hen' element={<><Nav/><HenHouse/></>} />
         <Route path='/sea' element={<><Nav/><Sea/></>} />
+        <Route path='/biriyani' element={<><Nav/><Biriyani/></>} />
       </Routes>
       </BrowserRouter>
     </div>
