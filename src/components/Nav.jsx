@@ -4,7 +4,8 @@ const Nav = () => {
     return (
         <div>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <a class="navbar-brand" href="#">Uni Resto Cafe</a>
+                <a class="navbar-brand" href="#">Uni Resto Cafe</a>
+
             </nav>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
@@ -38,5 +39,4 @@ const Nav = () => {
         </div>
     )
 }
-
 export default Nav

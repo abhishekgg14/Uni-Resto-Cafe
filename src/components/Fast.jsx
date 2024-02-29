@@ -27,12 +27,12 @@ const Fast = () => {
                                     return <div class="card mb-3">
                                         <div class="row g-0">
                                             <div class="col-md-8">
-                                                <h3 class="card-title">
+                                            <h3 class="card-title">
                                                     <img
                                                         height="20px"
                                                         width="20px"
-                                                        src="https://m.media-amazon.com/images/I/318fofZmBYL._AC_UF1000,1000_QL80_.jpg" class="img-fluid rounded-start" alt="..." />
-                                                    {value.dish_name}</h3>
+                                                        src="https://m.media-amazon.com/images/I/318fofZmBYL._AC_UF1000,1000_QL80_.jpg" class="img-fluid rounded-start" alt="..." />&nbsp;&nbsp;&nbsp;&nbsp;{value.dish_name}
+                                                </h3>
                                                 <h7>SAR {value.dish_price}</h7>
                                                 <p class="card-text">{value.dish_description}</p>
                                                 <h7>Customization Available</h7>
