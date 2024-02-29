@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import './Salad.css'
 const Salad = () => {
     const [data, setData] = new useState([])
     const getData = () => {
@@ -36,7 +37,22 @@ const Salad = () => {
                                                 <h7>SAR {value.dish_price}</h7>
                                         <p className="card-text">{value.dish_description}</p>
                                         {value.addonCat.length > 0 && <a href="#">Customization Available</a>}
-                                   
+                                            <br></br>
+                                            <br></br>
+                                            {value.dish_Availability?<div className='left'>
+                                                <div className="quantity">
+                                                    <button className='minus'>-</button>
+                                                    <input 
+                                                        type='text'
+                                                        className='input-number'
+                                                        value="1"
+                                                        min="0"
+                                                        max="50"/>
+                                                    <button className="plus">+</button>
+                                                </div>
+                                            </div> :"Not Availble"}
+                                            
+
                                             </div>
                                             <div class="col-md-2">
                                                 <br></br>
@@ -45,9 +61,8 @@ const Salad = () => {
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="card-body">
-                                                    <img
-                                                        height="150px"
-                                                        width="150px"
+                                                    <img id='dish'
+                                                        
                                                         src={value.dish_image} class="img-fluid rounded-start" alt="..." />
                                                 </div>
                                             </div>
