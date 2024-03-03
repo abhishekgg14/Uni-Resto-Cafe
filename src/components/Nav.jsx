@@ -1,11 +1,15 @@
 import React from 'react'
+import './Nav.css'
 
 const Nav = () => {
     return (
         <div>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <a class="navbar-brand" href="#">Uni Resto Cafe</a>
-                
+                <div class="cart-icon-container" id='icon'>
+                    <h8>My Orders</h8>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
             </nav>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
