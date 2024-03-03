@@ -10,7 +10,7 @@ const Salad = () => {
                 if (saladsAndSoupCategory) {
                     setData(saladsAndSoupCategory.category_dishes);
                 } else {
-                    setData([]); 
+                    setData([]);
                 }
             }
         )
@@ -35,23 +35,26 @@ const Salad = () => {
                                                 </h3>
 
                                                 <h7>SAR {value.dish_price}</h7>
-                                        <p className="card-text">{value.dish_description}</p>
-                                        {value.addonCat.length > 0 && <a href="#">Customization Available</a>}
-                                            <br></br>
-                                            <br></br>
-                                            {value.dish_Availability?<div className='left'>
-                                                <div className="quantity">
-                                                    <button className='minus'>-</button>
-                                                    <input 
-                                                        type='text'
-                                                        className='input-number'
-                                                        value="1"
-                                                        min="0"
-                                                        max="50"/>
-                                                    <button className="plus">+</button>
-                                                </div>
-                                            </div> :"Not Availble"}
-                                            
+                                                <p className="card-text">{value.dish_description}</p>
+                                                {value.addonCat.length > 0 && <a href="#">Customization Available</a>}
+                                                <br></br>
+                                                <br></br>
+                                                {value.dish_Availability ? <div className='left'>
+                                                    <div className="quantity">
+                                                        <button className='minus'>-</button>
+                                                        <input
+                                                            type='text'
+                                                            className='input-number'
+                                                            value="1"
+                                                            min="0"
+                                                            max="50" />
+                                                        <button className="plus">+</button>
+                                                    </div>
+                                                </div> : (
+                                                    <span style={{ color: 'red' }}>Not Available</span>
+                                                )
+                                                }
+
 
                                             </div>
                                             <div class="col-md-2">
@@ -62,7 +65,7 @@ const Salad = () => {
                                             <div class="col-md-2">
                                                 <div class="card-body">
                                                     <img id='dish'
-                                                        
+
                                                         src={value.dish_image} class="img-fluid rounded-start" alt="..." />
                                                 </div>
                                             </div>
