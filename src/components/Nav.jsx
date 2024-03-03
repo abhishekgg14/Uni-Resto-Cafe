@@ -1,11 +1,12 @@
 import React from 'react'
 import './Nav.css'
+import { Link } from 'react-router-dom'
 
 const Nav = () => {
     return (
         <div>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <a class="navbar-brand" href="#">Uni Resto Cafe</a>
+                <Link class="navbar-brand" to="#">Uni Resto Cafe</Link>
                 <div class="cart-icon-container" id='icon'>
                     <h8>My Orders</h8>
                     <i class="fa-solid fa-cart-shopping"></i>
@@ -19,22 +20,22 @@ const Nav = () => {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/">Salads and Soup</a>
+                                <Link class="nav-link active" aria-current="page" to="/">Salads and Soup</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/barn">From The Barnyard</a>
+                                <Link class="nav-link active" aria-current="page" to="/barn">From The Barnyard</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/hen">From The Hen House</a>
+                                <Link class="nav-link active" aria-current="page" to="/hen">From The Hen House</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/sea">Fresh From The Sea</a>
+                                <Link class="nav-link active" aria-current="page" to="/sea">Fresh From The Sea</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/biriyani">Biriyani</a>
+                                <Link class="nav-link active" aria-current="page" to="/biriyani">Biriyani</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/fast">Fast Food</a>
+                                <Link class="nav-link active" aria-current="page" to="/fast">Fast Food</Link>
                             </li>
                         </ul>
                     </div>
