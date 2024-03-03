@@ -8,8 +8,8 @@ const HenHouse = () => {
         axios.post("https://run.mocky.io/v3/f47694b8-4d45-4c30-aed0-dd82bb4025fb", data).then(
             (response) => {
                 const fromhenhouse = response.data.data[0].table_menu_list.find(category => category.menu_category === "From the Hen House");
-                if (fromhenhouse ) {
-                    setData(fromhenhouse .category_dishes);
+                if (fromhenhouse) {
+                    setData(fromhenhouse.category_dishes);
                 } else {
                     setData([]);
                 }
@@ -19,7 +19,7 @@ const HenHouse = () => {
     useEffect(() => { getData() }, [])
     return (
         <div>
-             <div className="container">
+            <div className="container">
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
                         {
@@ -36,22 +36,25 @@ const HenHouse = () => {
                                                 </h3>
 
                                                 <h7>SAR {value.dish_price}</h7>
-                                        <p className="card-text">{value.dish_description}</p>
-                                        {value.addonCat.length > 0 && <a href="#">Customization Available</a>}
-                                        <br></br>
-                                            <br></br>
-                                            {value.dish_Availability?<div className='left'>
-                                                <div className="quantity">
-                                                    <button className='minus'>-</button>
-                                                    <input 
-                                                        type='text'
-                                                        className='input-number'
-                                                        value="1"
-                                                        min="0"
-                                                        max="50"/>
-                                                    <button className="plus">+</button>
-                                                </div>
-                                            </div> :"Not Availble"}
+                                                <p className="card-text">{value.dish_description}</p>
+                                                {value.addonCat.length > 0 && <a href="#">Customization Available</a>}
+                                                <br></br>
+                                                <br></br>
+                                                {value.dish_Availability ? <div className='left'>
+                                                    <div className="quantity">
+                                                        <button className='minus'>-</button>
+                                                        <input
+                                                            type='text'
+                                                            className='input-number'
+                                                            value="1"
+                                                            min="0"
+                                                            max="50" />
+                                                        <button className="plus">+</button>
+                                                    </div>
+                                                </div> : (
+                                                    <span style={{ color: 'red' }}>Not Available</span>
+                                                )
+                                                }
                                             </div>
                                             <div class="col-md-2">
                                                 <br></br>
